@@ -1,0 +1,64 @@
+.singletodo {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.singletodo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.singletodo span {
+    font-size: 1rem;
+    color: #333;
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.singletodo div {
+    display: flex;
+    gap: 12px;
+}
+
+.singletodo div span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.singletodo div span:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+/* Icon Colors */
+.singletodo div span:nth-child(1) { color: #ffa500; } /* Edit - Orange */
+.singletodo div span:nth-child(2) { color: #ff4d4d; } /* Delete - Red */
+.singletodo div span:nth-child(3) { color: #4caf50; } /* Done - Green */
+.onchange {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+
+    transition: border-bottom 0.3s ease;
+}
