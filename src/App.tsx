@@ -4,7 +4,7 @@ import InputField from './components/InputField'
 import { Todo } from './components/model'
 import List from './components/List'
 const App:React.FC=()=> {
-  const [todo, settodo] = useState<string | number>("") ;
+  const [todo, settodo] = useState<string>("") ;
   const [todos, settodos] = useState<Todo[]>([]);
   const handleSubmit=(e:React.FormEvent)=>{
     e.preventDefault();
