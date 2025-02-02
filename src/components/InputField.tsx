@@ -3,7 +3,7 @@ import './InputField.css'
 
 interface InputFieldProps {
     todo: string;
-    settodo: React.Dispatch<React.SetStateAction<string | number>>;
+    settodo: React.Dispatch<React.SetStateAction<string>>;
     handleSubmit: (e: React.FormEvent) => void;
 }
 
