@@ -62,3 +62,24 @@
 
     transition: border-bottom 0.3s ease;
 }
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.activetodo {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 10px;
+}
+.completedtodo{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 10px;  
+}
