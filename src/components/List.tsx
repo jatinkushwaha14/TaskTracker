@@ -15,15 +15,13 @@ const List = ({ todos, settodos, completedtodos, setcompletedtodos }: InputField
         <div className='container'>
             <div className="activetodo">
                 <h2>Active todos</h2>
-                {todos.map((todo, index) =>
+                {todos.map((todo) =>
                     !todo.isCompleted ? (
                         <Singletodo
-                            index={index}
                             key={todo.id}
                             todo={todo}
                             todos={todos}
                             settodos={settodos}
-                            completedtodos={completedtodos}
                             setcompletedtodos={setcompletedtodos}
                         />
                     ) : null
@@ -32,15 +30,13 @@ const List = ({ todos, settodos, completedtodos, setcompletedtodos }: InputField
 
             <div className="completedtodo">
                 <h2>Completed todos</h2>
-                {completedtodos.map((todo, index) =>
+                {completedtodos.map((todo) =>
                     todo.isCompleted ? (
                         <Singletodo
-                            index={index}
                             key={todo.id}
                             todo={todo}
                             todos={completedtodos}
                             settodos={setcompletedtodos}
-                            completedtodos={completedtodos}
                             setcompletedtodos={setcompletedtodos}
                         />
                     ) : null
